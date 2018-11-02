@@ -1,0 +1,180 @@
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px)
+	.footer
+		font-size: 18px
+	.footer-icon	
+		text-align: right
+		ul
+			list-style: none
+			li
+				margin-left: 10px
+				display: inline-block
+				text-align: center
+				width: 43px
+				height: 43px
+				background-color: $body-bg
+				border-radius: 50%
+				&:hover
+					transition: 0.2s
+					box-shadow: 0 0 10px $sidebar-shadow
+					background-color: #2c2c2c
+		a
+			display: block
+			text-decoration: none
+			color: $footer-text
+			font-size: 28px
+			&:hover
+				transition: 0.8s
+				color: $text-white	
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px)
+	.footer
+		font-size: 18px
+	.footer-icon	
+		text-align: right
+		ul
+			list-style: none
+			li
+				margin-left: 10px
+				display: inline-block
+				text-align: center
+				width: 45px
+				height: 45px
+				background-color: $body-bg
+				border-radius: 50%
+				&:hover
+					transition: 0.2s
+					box-shadow: 0 0 10px $sidebar-shadow
+					background-color: #2c2c2c
+		a
+			display: block
+			text-decoration: none
+			color: $footer-text
+			font-size: 30px
+			&:hover
+				transition: 0.8s
+				color: $text-white	
+h4
+	font-size: 1.2rem				
+h3
+	font-size: 1.3rem
+h2
+	font-size: 1.7rem	
+// Средние девайсы («таблетки», >= 768px) 
+@media (min-width: 768px) and (max-width: 991.98px)
+	.footer
+		font-size: 18px
+	.footer-icon	
+		text-align: right
+		ul
+			list-style: none
+			li
+				margin-left: 10px
+				display: inline-block
+				text-align: center
+				width: 45px
+				height: 45px
+				background-color: $body-bg
+				border-radius: 50%
+				&:hover
+					transition: 0.2s
+					box-shadow: 0 0 10px $sidebar-shadow
+					background-color: #2c2c2c
+		a
+			display: block
+			text-decoration: none
+			color: $footer-text
+			font-size: 30px
+			&:hover
+				transition: 0.8s
+				color: $text-white	
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link
+	width: 100%
+	max-width: 100px
+	margin-left: auto
+	margin-right: auto
+.top-nav
+	background-color: $body-bg
+	padding: 15px
+	box-shadow: 0 0 8px $sidebar-shadow
+	&_menu
+		margin: 0 auto
+		margin-right: 220px
+		text-align: center
+		list-style: none
+		padding: 0
+		display: flex
+		justify-content: center
+		li
+			margin-right: 40px
+			a
+				text-transform: uppercase
+				text-decoration: none
+				text-shadow: 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5)
+				font-weight: 800
+				font-size: 17px
+				&::before
+					content: ''
+					display: block
+					width: 100%
+					height: 2px
+					background-color: #732372	
+					transform: translateY(10px) scale(0)
+					transition: all 0.2s
+				&::after
+					content: ''
+					display: block
+					margin-left: auto
+					margin-right: auto
+					width: 100%
+					max-width: 90px
+					height: 2px
+					background-color: #732372	
+					transform: translateY(10px) scale(0)
+					transition: all 0.2s
+				&:hover
+					text-decoration
+					text-shadow: 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 2px 2px 2px rgba(0,0,0,.5), 2px 2px 3px #8b2e8a
+					&::after
+						transform: translateY(3px) scale(1)
+						box-shadow: 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 2px 2px 2px rgba(0,0,0,.5), 2px 2px 3px #8b2e8a	
+.form-inline
+	margin: 10px auto
+	width: 220px				
+// Большие девайсы (большие десктопы, >= 992px)
+@media (min-width: 992px) and (max-width: 1199.98px)
+	.footer
+		font-size: 18px
+	.footer-icon	
+		text-align: right
+		ul
+			list-style: none
+			li
+				margin-left: 10px
+				display: inline-block
+				text-align: center
+				width: 45px
+				height: 45px
+				background-color: $body-bg
+				border-radius: 50%
+				&:hover
+					transition: 0.2s
+					box-shadow: 0 0 10px $sidebar-shadow
+					background-color: #2c2c2c
+		a
+			display: block
+			text-decoration: none
+			color: $footer-text
+			font-size: 30px
+			&:hover
+				transition: 0.8s
+				color: $text-white	
+
+// Большие девайсы (большие десктопы, >= 1600px)
+@media (min-width: 1600px)
+	.item
+		width: 100%
+		height: 480px
+
+
